@@ -32,12 +32,12 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform-origin: center;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  opacity: 0%;
+  opacity: 0%; /* changed from 0 to 20 */
   text-align: center;
 }
 
@@ -49,14 +49,24 @@ button {
   pointer-events: none;
   position: fixed;
   inset: 0;
-  background: #000;
+  background: black;
   opacity: 0%;
 }
 
 .popup-modal.show {
+  transition: opacity 0.2s, ease-in-out top 0.7s;
   opacity: 100%;
+  top: 50%;
   pointer-events: all;
 }
+.popup-modal{
+  transition: opacity 0.4s, ease-out top 1s;
+  opacity: 0;
+  top: 20%;
+}
+
+
+
 
 .backdrop.show {
   opacity: 30%;
