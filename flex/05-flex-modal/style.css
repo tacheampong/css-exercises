@@ -4,6 +4,19 @@ html, body {
   height: 100%;
 }
 
+.top{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.header{
+  font-weight:bolder;
+}
+.text{
+  margin-bottom: 10px;
+
+}
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -16,9 +29,12 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap:16px;
   background: white;
   width: 480px;
   border-radius: 10px;
+  padding: 20px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
@@ -33,6 +49,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
