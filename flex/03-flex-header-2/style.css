@@ -9,6 +9,9 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -43,6 +46,13 @@ a {
   color: rebeccapurple;
 }
 
+.left-items, .right-items{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 ul {
+  display: flex;
+  gap: 8px;
   list-style-type: none;
 }
